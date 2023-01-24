@@ -28,7 +28,6 @@ namespace User_PassProject
                 {
                     Console.WriteLine("New Password: ");
                     newpassword = Console.ReadLine();
-
                     Console.WriteLine("Your old password was " + password + ". Your new password is " + newpassword + ".");
                     Console.WriteLine("Account Information: ");
                     Console.WriteLine("Username: " + username + " Password: " + newpassword);
