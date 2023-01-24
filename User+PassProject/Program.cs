@@ -7,7 +7,7 @@ namespace User_PassProject
         private static void Main(string[] args)
         {
             // Declare login and change login variables
-            string username, password, confirmed_password, passcheck1, passcheck2, userandpasshappy, newpassword;
+            string username, password, confirmed_password, passcheck1, passcheck2, passhappy, newpassword;
             // Initiate a new user
             Console.WriteLine("Hey new user! To start, create an account with us: ");
             Console.Write("Username: "); username = Console.ReadLine();
@@ -17,14 +17,14 @@ namespace User_PassProject
             if (password == confirmed_password)
             {
                 Console.WriteLine("Your account has been created with the username " + username + " and the password " + password + ". Are you happy with your password?");
-                userandpasshappy = Console.ReadLine();
+                passhappy = Console.ReadLine();
                 // If user is content, let them continue
-                if (userandpasshappy == "yes")
+                if (passhappy == "yes")
                 {
                     Console.WriteLine("Welcome " + username + ".");
                 }
                 // If user is unhappy, prompt them to change their Password
-                else if (userandpasshappy == "no")
+                else if (passhappy == "no")
                 {
                     Console.WriteLine("New Password: ");
                     newpassword = Console.ReadLine();
@@ -62,9 +62,6 @@ namespace User_PassProject
                     }
                 }
             }
-            // Allowing user to enter personal information
-            Console.WriteLine("Let's continue.");
-            Console.WriteLine("Tell us more about you, " + username + ".");
         }
     }
 }
