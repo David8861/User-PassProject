@@ -2,9 +2,9 @@
 
 namespace User_PassProject
 {
-    internal class User_PassProject
+    class User_PassProject
     {
-        private static void Main(string[] args)
+        public void Main(string[] args)
         {
             // Declare login and change login variables
             string username, password, confirmed_password, passcheck1, passcheck2, passhappy, newpassword;
